@@ -14,7 +14,12 @@ var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #inc
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
-//New task list item
+/**
+ * Create a new task list item
+ * @param {string} taskString
+ * @returns {HTMLLIElement}
+ */
+
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
@@ -56,7 +61,6 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(deleteButton);
     return listItem;
 }
-
 
 
 var addTask=function(){
