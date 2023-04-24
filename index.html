@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
     <title>Todo App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
-
   <body id="root">
-
     <header class="info">
       <img class="info-image" src="./eisenhower-matrix.jpg" alt="info image">
       <a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-
     <main class="app-container">
-
       <section class="todo-add">
+        <h3 style="display: none">Add Item</h3>
         <p id="todo-add-heading">
           <label for="todo-add-input" class="todo-add-label">Add Item</label>
         </p>
@@ -25,36 +22,29 @@
           <button class="button">Add</button>
         </div>
       </section>
-
-
       <section class="todo-incomplete">
         <h3 class="section-heading">Todo</h3>
         <ul id="todo-incomplete-list" class="list">
-
           <li class="todo-incomplete-item list-item">
             <input class="list-item-checkbox" type="checkbox">
             <label class="todo-add-input list-item-label">Pay Bills</label>
             <input type="text" class="todo-add-input text-input">
             <button class="edit button">Edit</button>
             <button class="delete button">
-              <img class="button-img" src="./remove.svg" alt="remove image">
+              <img class="button-img" src="./remove.svg" alt="">
             </button>
           </li>
-
           <li class="todo-incomplete-item list-item">
             <input class="list-item-checkbox" type="checkbox">
             <label class="todo-add-input list-item-label">Go Shopping</label>
             <input type="text" value="Go Shopping" class="todo-add-input text-input">
             <button class="edit button">Edit</button>
             <button class="delete button">
-              <img class="button-img" src="./remove.svg" alt="remove image">
+              <img class="button-img" src="./remove.svg" alt="">
             </button>
           </li>
-
         </ul>
       </section>
-
-
       <section class="todo-complete">
         <h3 class="section-heading">Completed</h3>
         <ul id="completed-tasks" class="list">
@@ -64,15 +54,12 @@
             <input type="text" class="todo-add-input text-input">
             <button class="edit button">Edit</button>
             <button class="delete button">
-              <img class="button-img" src="./remove.svg" alt="remove image">
+              <img class="button-img" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
       </section>
-
     </main>
-
     <script src="app.js"></script>
-
   </body>
 </html>
